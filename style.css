@@ -16,10 +16,7 @@ header{
 
 }
 
-a {
-    color: blue;
-}
 
 a:hover{
-    color:red
+    color:purple;
 }
