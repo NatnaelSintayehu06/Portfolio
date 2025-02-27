@@ -1,6 +1,25 @@
 nav a{
     font-size: 1.5em;
-    color: black;
+    color:white;
     margin-left: 3.5em;
-    font-weight: bold
+    font-weight: bold;
+    background-color: black;
+    display: white
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+
+}
+
+a {
+    color: blue;
+}
+
+a:hover{
+    color:red
 }
