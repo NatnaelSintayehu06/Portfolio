@@ -3,7 +3,7 @@ nav a{
     color:white;
     margin-left: 3.5em;
     font-weight: bold;
-    background-color: black;
+    background-color: purple;
     display: white
 }
 
@@ -13,10 +13,12 @@ body{
 }
 
 header{
-
+    background-color: purple;
+    color: white;
+    display:block
 }
 
 
 a:hover{
-    color:purple;
+    color:black;
 }
