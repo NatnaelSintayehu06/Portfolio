@@ -11,10 +11,13 @@ nav a{
 body{
     background-color:black;
     color: white;
+    
 }
 
 header{
+    margin: 2em;
     background-color: purple;
+    padding:2em;
     color: white;
     display:block
 }
@@ -23,3 +26,4 @@ header{
 a:hover{
     color:black;
 }
+
