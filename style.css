@@ -2,28 +2,51 @@ nav a{
     font-size: 1.5em;
     color:white;
     margin-left: 3.5em;
+    margin: 1em;
+    padding: 0.5em;
     font-weight: bold;
-    background-color: purple;
+    background-color: black;
     display: white;
     text-decoration: underline;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
 }
 
 body{
     background-color:black;
     color: white;
-    
+    grid-area: body;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+         "nav"
+         "header"
+         "body"
+         "footer"
+         ;
 }
 
 header{
-    margin: 2em;
+    margin: 1em;
     background-color: purple;
-    padding:2em;
-    color: white;
-    display:block
+    padding: none;
+    color: white;;
+    grid-area: header;
 }
 
 
 a:hover{
-    color:black;
+    color:purple;
+}
+
+footer{
+    grid-area: footer;
+    background-color: purple;
+    color: white;
+    
+
+
 }
 
