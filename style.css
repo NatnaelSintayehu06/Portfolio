@@ -29,6 +29,12 @@ nav ul ul{
     background-color: rgb(74, 13, 104);
     padding: 0;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.25s ease-in
+}
+
+nav > ul > li:hover ul{
+    opacity: 1;;
 }
 body{
     background-color:black;
