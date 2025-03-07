@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 nav a{
     font-size: 1.5em;
     color:black;
@@ -12,6 +16,19 @@ nav ul{
     display: flex;
     justify-content: space-evenly;
     background-color: purple;
+}
+
+nav > ul > li{
+    position: relative;
+    width: 100%
+}
+
+nav ul ul{
+    position: absolute;
+    display: block;
+    background-color: rgb(74, 13, 104);
+    padding: 0;
+    width: 100%;
 }
 body{
     background-color:black;
@@ -29,7 +46,7 @@ body{
 
 header{
     margin: 1em;
-    background-color: purple;
+    background-color: black;
     padding: none;
     color: white;;
     grid-area: header;
