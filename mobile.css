@@ -1,0 +1,117 @@
+nav a{
+    font-size: 1.5em;
+    color:black;
+    margin-left: 3.5em;
+    margin: 1em;
+    padding: 0.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    grid-area: nav;
+}
+nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+nav ul{
+    display: block;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: purple;
+    border-top: 0.20em solid white;
+    border-left: 0.20em solid white ;
+    border-right: 0.20em solid white;
+}
+
+nav ul ul{
+    position: absolute;
+    display: block;
+    background-color: rgb(74, 13, 104);
+    padding: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+    pointer-events: none;
+}
+
+nav > ul > li{
+    position: relative;
+    width: 100%
+}
+
+nav > ul > li:hover ul{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+body{
+    background-color:black;
+    color: white;
+    grid-area: body;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+         "header"
+         "nav"
+         "main"
+         "footer";
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    margin: 0em;
+    padding: 0.5em;
+    border-bottom: 0.20em solid white;
+    border-left: 0.20em solid white;
+    border-right: 0.20em solid white;
+}
+
+main{
+    text-align: center;
+    font-size: 2.5em
+}
+
+header{
+    margin: 1em;
+    background-color: black;
+    padding: none;
+    color: white;;
+    grid-area: header;
+    justify-content: center;
+}
+
+a:hover{
+    color:white;
+}
+
+.indexHeader{
+    transform: skew(2deg, 3deg);
+}
+
+.showNav{
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.25em;
+}
+
+.showNav::before{
+    content:'';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid white;
+}
