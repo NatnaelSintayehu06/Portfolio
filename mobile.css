@@ -72,7 +72,7 @@ footer{
     color: white;
     text-align: center;
     margin: 0em;
-    padding: 0.5em;
+    padding: 0em;
     border-bottom: 0.20em solid white;
     border-left: 0.20em solid white;
     border-right: 0.20em solid white;
@@ -126,4 +126,8 @@ a:hover{
          "nav"
          "main"
          "footer";
+}
+
+.contact-font{
+    font-size: medium;
 }
