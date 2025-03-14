@@ -124,10 +124,18 @@ i:hover{
 }
 
 .project-div{
-    border: 1em solid black;
+    border: 0.5em solid black;
     padding: 2em;
+    border-bottom: 0.10em solid white;
+    border-right: 0.10em solid white;
+    border-left: 0.10em solid white;
+    border-top: 0.10em solid white;
 }
 
 .project-image{
     width: 100%;
+}
+
+.project-header{
+    text-decoration: underline;
 }
