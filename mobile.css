@@ -19,7 +19,7 @@ nav{
 }
 nav ul{
     display: block;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     background-color: purple;
     border-top: 0.20em solid white;
@@ -130,4 +130,20 @@ a:hover{
 
 .contact-font{
     font-size: medium;
+}
+
+#clicked .showNav{
+    display: block;
+}
+
+#clicked .nav{
+    display: none;
+}
+ 
+#clicked:target .showNav{
+    display: block;
+}
+
+#clicked:target .nav{
+    display: block; 
 }
