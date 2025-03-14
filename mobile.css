@@ -12,7 +12,7 @@ nav{
     display: block;
     position: fixed;
     top: 0;
-    left: 50%;
+    left: -50%;
     width: 50%;
     height: 100vh;
 }
@@ -114,4 +114,20 @@ a:hover{
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid white;
+}
+
+#hamburger .on{
+    display: block;
+}
+
+#hamburger .off{
+    display: none;
+}
+
+#hamburger:target .on{
+    display: none;
+}
+
+#hamburger:target .off{
+    display: block;
 }

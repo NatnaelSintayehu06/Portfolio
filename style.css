@@ -76,6 +76,7 @@ h1{ justify-content: center;
 
 a:hover{
     color:white;
+    transition: color 0.25s ease-in-out;
 }
 
 footer{
@@ -100,4 +101,14 @@ main{
 
 .indexHeader{
     transform: skew(2deg, 3deg);
+}
+
+i{
+    font-size: 3em;
+    color: black;
+    transition: color 0.25s ease-in-out;
+}
+
+i:hover{
+    color: white;
 }
