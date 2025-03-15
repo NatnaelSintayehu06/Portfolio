@@ -65,6 +65,9 @@ body{
          "footer";
 }
 
+li{
+    font-size: small;
+}
 
 footer{
     grid-area: footer;
@@ -122,10 +125,10 @@ a:hover{
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: 
-         "header"
-         "nav"
-         "main"
-         "footer";
+         "div"
+         "div"
+         "div"
+         "div";
 }
 
 .contact-font{
