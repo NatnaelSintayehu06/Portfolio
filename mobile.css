@@ -86,7 +86,7 @@ main{
 header{
     margin: 1em;
     background-color: black;
-    padding: none;
+    padding: 0;
     color: white;;
     grid-area: header;
     justify-content: center;
@@ -132,18 +132,30 @@ a:hover{
     font-size: medium;
 }
 
-#clicked .showNav{
+#clicked .on{
     display: block;
 }
 
-#clicked .nav{
+#clicked .off{
     display: none;
 }
- 
-#clicked:target .showNav{
+
+#clicked:target .on{
+    display: none;
+}
+
+#clicked:target .off{
     display: block;
 }
 
-#clicked:target .nav{
-    display: block; 
+#clicked nav{
+    left: -50%;
+}
+
+#clicked:target nav{
+    left: 50%;
+}
+
+.sitereport-p{
+    font-size: medium;
 }
