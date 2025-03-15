@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 nav a{
     font-size: 1.5em;
     color:black;
@@ -74,8 +78,8 @@ footer{
     background-color: purple;
     color: white;
     text-align: center;
-    margin: 0em;
-    padding: 0em;
+    margin: 0;
+    padding: 0;
     border-bottom: 0.20em solid white;
     border-left: 0.20em solid white;
     border-right: 0.20em solid white;
@@ -120,6 +124,31 @@ a:hover{
     border-top: 0.2em solid white;
 }
 
+.sitereport-main{
+    display: grid;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+         "div"
+         "div"
+         "div"
+         "div";
+}
+
+.sitereport-div{
+    border: 0.5em solid black;
+    padding: 2em;
+    border-bottom: 0.10em solid white;
+    border-right: 0.10em solid white;
+    border-left: 0.10em solid white;
+    border-top: 0.10em solid white;
+}
+
+.sitereport-img{
+    width: 100%;
+}
+
 .project-main{
     display: grid;
     grid-template-columns: 100%;
@@ -160,5 +189,47 @@ a:hover{
 }
 
 .sitereport-p{
-    font-size: medium;
+    font-size: small;
+}
+
+.circle-animation{ 
+    width: 2em;
+    height: 2em;
+    background-color: purple;
+    border-radius: 100%;
+    animation: move 2.5s infinite;
+}
+
+@keyframes move{
+    
+    0% {
+        background-color: purple;
+        transform: translate(0,0);
+    }
+
+    25% {
+        background-color: white;
+        transform: translate(78vw,0);
+    }
+
+    50% {
+        background-color: purple;
+        transform: translate(78vw,40vh);
+    }
+
+    75% { 
+        background-color: white;
+        transform: translate(0,40vh);
+    }
+
+    100% {
+        background-color: purple;
+        transform: translate(0,0);
+    }
+ 
+}
+
+.sitereport-header{
+    font-size: xx-large;
+
 }
